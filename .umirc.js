@@ -15,11 +15,13 @@ export default {
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       antd: false,
-      dva: false,
+      dva: {
+        immer: true
+      },
       dynamicImport: false,
       title: 'xx',
       dll: false,
-      
+
       routes: {
         exclude: [
           /components\//,
